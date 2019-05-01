@@ -1,2 +1,2 @@
-# To_do_App
+# Simple To Do
 To do App made with React Native
