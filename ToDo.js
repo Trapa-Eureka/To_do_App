@@ -20,7 +20,11 @@ export default class ToDo extends Component {
                     </TouchableOpacity>
                     { isEditing ? (
                         <TextInput 
-                            style={[styles.input, styles.text, isCompleted ? styles.completedText : styles.uncompletedText]} 
+                            style={[
+                                styles.text, 
+                                styles.input, 
+                                isCompleted ? styles.completedText : styles.uncompletedText
+                            ]} 
                             value={toDoValue}
                             multiline={true}
                             onChangeText={this._controlInput}
@@ -98,7 +102,7 @@ const styles = StyleSheet.create ({
         height: 26,
         borderRadius: 13,
         borderWidth: 3,
-        marginRight: 20
+        marginRight: 30
     },
     completedCircle: {
         borderColor: "#bbb"
@@ -136,7 +140,8 @@ const styles = StyleSheet.create ({
         color: "#bbb"
     },
     input: {
-        marginVertical: 10,
-        width: width / 2
+        marginVertical: 15,
+        width: width / 2,
+        paddingBottom: 5
     }
 })
